@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quán Ăn 396 - Bò Né & Bò Bít Tết Chảo Gang Nguyễn Thị Kiểu Quận 12</title>
+  <meta name="description" content="Quán Ăn 396 chuyên Bò Né xèo xèo chảo gang, Bò Bít Tết sốt tiêu đen mọng nước, Mì cay 7 cấp độ và bánh mì giòn rụm tại 396 Nguyễn Thị Kiểu, Hiệp Thành, Quận 12, TP.HCM.">
+  <meta property="og:title" content="Quán Ăn 396 - Bò Né & Bò Bít Tết Chảo Gang Nguyễn Thị Kiểu Q.12">
+  <meta property="og:description" content="Thưởng thức chảo bò né sôi xèo xèo thơm nức mũi, thịt bò tươi mềm mọng nước, pate gan béo ngậy và bánh mì nóng giòn chỉ từ 38.000đ.">
+  <meta property="og:image" content="hero-bo-ne.jpg">
+  <link rel="icon" type="image/jpeg" href="hero-bo-ne.jpg">
+
+  <!-- Google Fonts: 100% Native Vietnamese Support (Be Vietnam Pro & Montserrat) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement / Live Status Bar -->
+  <aside class="top-status-bar" id="topStatusBar">
+    <div class="status-bar-container">
+      <div class="status-live-group">
+        <span class="live-dot-pulse"></span>
+        <span class="status-text" id="liveOpenStatus">Đang Mở Cửa Phục Vụ (06:00 - 23:00)</span>
+        <span class="status-divider">•</span>
+        <span class="status-promo">🔥 <strong>Ưu đãi hôm nay:</strong> Tặng kèm Bánh Mì Nóng Giòn & Dĩa Salad tươi cho mọi phần Bò Né & Bít Tết!</span>
+      </div>
+      <div class="status-actions">
+        <a href="tel:0908396396" class="top-hotline-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Hotline: 0908 396 396
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Modern Navigation Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="header-container">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <span class="flame-icon">🔥</span>
+        </div>
+        <div class="brand-text-group">
+          <div class="brand-title">QUÁN ĂN 396</div>
+          <div class="brand-subtitle">Bò Né & Bò Bít Tết • Q.12</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#heroSection" class="nav-link active">Trang Chủ</a>
+        <a href="#specialSpotlight" class="nav-link">Món Nổi Bật</a>
+        <a href="#menuSection" class="nav-link">Thực Đơn</a>
+        <a href="#spaceSection" class="nav-link">Không Gian</a>
+        <a href="#reviewsSection" class="nav-link">Đánh Giá</a>
+        <a href="#locationSection" class="nav-link">Bản Đồ</a>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="header-actions">
+        <!-- Google Maps Direction Quick Button -->
+        <a href="https://maps.app.goo.gl/zEszTX1UxapnSQRu8" target="_blank" rel="noopener noreferrer" class="btn-maps-nav" title="Mở chỉ đường Google Maps">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <span class="btn-text">Chỉ Đường Q.12</span>
+        </a>
+
+        <!-- Reserve Table Trigger -->
+        <button class="btn-reserve" id="btnOpenReserveModal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span class="btn-text">Đặt Bàn Trước</span>
+        </button>
+
+        <!-- Cart Tray Trigger Button -->
+        <button class="btn-cart-header" id="btnOpenCartDrawer" title="Xem mâm gọi món">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge-count" id="cartCountBadge">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="btn-theme-toggle" id="btnThemeToggle" title="Chuyển chế độ màu sắc">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main>
+    <section class="hero-section" id="heroSection">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge-pill">
+            <span class="badge-fire">🔥 Đậm Đà Ẩm Thực Sài Gòn</span>
+            <span class="badge-address">396 Nguyễn Thị Kiểu, P. Hiệp Thành, Q.12</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bò Né Xèo Xèo Chảo Gang <br>
+            <span class="gradient-fire">Thơm Lừng Từng Miếng Thịt Bò Tươi</span>
+          </h1>
+
+          <p class="hero-desc">
+            Chào mừng bạn đến với <strong>Quán Ăn 396</strong>! Nơi chảo gang sôi bốc khói nghi ngút cùng thăn bò mềm ngọt, trứng ốp la lòng đào vàng ươm, pate gan béo ngậy gia truyền và ổ bánh mì nóng giòn rụm chỉ từ <strong>38.000đ</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menuSection" class="btn-hero-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Xem Menu & Gọi Món</span>
+            </a>
+
+            <a href="https://maps.app.goo.gl/zEszTX1UxapnSQRu8" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Chỉ Đường Google Maps</span>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Counters -->
+          <div class="hero-highlights-row">
+            <div class="highlight-chip">
+              <span class="chip-val">4.8 ★</span>
+              <span class="chip-label">860+ Đánh Giá Google</span>
+            </div>
+            <div class="highlight-chip">
+              <span class="chip-val">100%</span>
+              <span class="chip-label">Thịt Bò Tươi Mỗi Ngày</span>
+            </div>
+            <div class="highlight-chip">
+              <span class="chip-val">20 Phút</span>
+              <span class="chip-label">Chảo Gang Giữ Nóng</span>
+            </div>
+            <div class="highlight-chip">
+              <span class="chip-val">0đ</span>
+              <span class="chip-label">Bánh Mì & Salad Tặng Kèm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-image-wrap">
+          <div class="image-glow"></div>
+          <div class="hero-image-card">
+            <img src="hero-bo-ne.jpg" alt="Chảo Bò Né Đặc Biệt Quán 396 xèo xèo thơm nức" class="hero-dish-img">
+            <div class="floating-price-tag">
+              <span class="tag-title">Bò Né Đặc Biệt 396</span>
+              <span class="tag-price">55.000đ <small>(Full Topping)</small></span>
+            </div>
+            <div class="floating-sizzle-badge">
+              <span class="sizzle-icon">💨</span>
+              <span>Sôi Xèo Xèo Chảo Gang</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Key Reasons to Love 396 Section -->
+    <section class="features-bar-section">
+      <div class="section-container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon-box fire">
+              <span>🥩</span>
+            </div>
+            <div class="feature-info">
+              <h4>Bò Tươi Nhập Mới Mỗi Sáng</h4>
+              <p>Thịt bò mềm mọng nước, tẩm ướp nước sốt gia truyền bí truyền không chất bảo quản.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box cow">
+              <span>🍳</span>
+            </div>
+            <div class="feature-info">
+              <h4>Chảo Gang Con Bò Giữ Nhiệt</h4>
+              <p>Chảo gang đúc chuyên dụng giữ độ sôi sùng sục, thịt bò chín tới ngấm đẫm gia vị.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box bread">
+              <span>🥖</span>
+            </div>
+            <div class="feature-info">
+              <h4>Bánh Mì Nóng Giòn Miễn Phí</h4>
+              <p>Bánh mì luôn được nướng lại trên than hồng giòn rụm trước khi bưng ra phục vụ.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box fast">
+              <span>⚡</span>
+            </div>
+            <div class="feature-info">
+              <h4>Phục Vụ Nhanh Dưới 5 Phút</h4>
+              <p>Ra món siêu tốc, bàn ghế sạch sẽ, quạt gió mát mẻ, nhân viên thân thiện nhiệt tình.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Dishes Spotlight Section -->
+    <section class="spotlight-section" id="specialSpotlight">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="sub-badge">MÓN ĐẶC SẮC KHÔNG THỂ BỎ QUA</span>
+          <h2 class="section-title">Hương Vị Trứ Danh Tạo Nên Tên Tuổi Quán 396</h2>
+          <p class="section-description">Từ chảo bò né truyền thống đến thăn bít tết mọng nước và mì cay thố đá bùng nổ vị giác</p>
+        </div>
+
+        <div class="spotlight-grid">
+          <!-- Spotlight 1 -->
+          <article class="spotlight-card">
+            <div class="spotlight-media">
+              <img src="hero-bo-ne.jpg" alt="Bò Né Đặc Biệt 396">
+              <span class="spotlight-badge">Món Ký Danh Số 1</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-header-row">
+                <h3 class="dish-name">Bò Né Đặc Biệt 396 (Full Topping)</h3>
+                <span class="dish-price">55.000đ</span>
+              </div>
+              <p class="dish-desc">
+                Trọn vẹn hương vị đỉnh cao: Thăn bò tươi mềm, trứng ốp la lòng đào, pate gan béo ngậy, xúc xích Đức nướng xèo xèo, xíu mại sốt cà chua và phô mai thơm phức. Tặng kèm bánh mì nóng giòn và dĩa salad tươi.
+              </p>
+              <div class="spotlight-footer">
+                <span class="cook-time">⏱️ 3-5 phút lên bàn</span>
+                <button class="btn-add-spotlight" data-add-dish="bn-01">
+                  <span>+ Thêm Vào Mâm</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Spotlight 2 -->
+          <article class="spotlight-card">
+            <div class="spotlight-media">
+              <img src="bo-bit-tet.jpg" alt="Bò Bít Tết Sốt Tiêu Đen">
+              <span class="spotlight-badge gold">Bò Mọng Nước</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-header-row">
+                <h3 class="dish-name">Bò Bít Tết Sốt Tiêu Đen Thượng Hạng</h3>
+                <span class="dish-price">65.000đ</span>
+              </div>
+              <p class="dish-desc">
+                Từng thớ thịt thăn bò dày dặn mọng nước, áp chảo vừa chín tới mềm tan trong miệng, rưới ngập sốt tiêu đen Phú Quốc cay nồng sóng sánh, ăn kèm dĩa khoai tây chiên vàng ruộm và bánh mì.
+              </p>
+              <div class="spotlight-footer">
+                <span class="cook-time">⏱️ 5 phút lên bàn</span>
+                <button class="btn-add-spotlight" data-add-dish="bt-01">
+                  <span>+ Thêm Vào Mâm</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Spotlight 3 -->
+          <article class="spotlight-card">
+            <div class="spotlight-media">
+              <img src="mi-cay-drinks.jpg" alt="Mì Cay Hàn Quốc Hải Sản Bò Mỹ">
+              <span class="spotlight-badge red">Cay 7 Cấp Độ</span>
+            </div>
+            <div class="spotlight-body">
+              <div class="spotlight-header-row">
+                <h3 class="dish-name">Mì Cay Thố Đá Hải Sản Bò Mỹ</h3>
+                <span class="dish-price">48.000đ</span>
+              </div>
+              <p class="dish-desc">
+                Nước súp kim chi sôi ùng ục trong thố đất giữ nhiệt, sợi mì dai giòn đậm vị kèm tôm sú tươi ngọt, mực giòn sần sật, thịt bò Mỹ béo mềm, nấm kim châm thanh ngọt cùng ly Trà Đào Cam Sả mát lạnh giải ngấy.
+              </p>
+              <div class="spotlight-footer">
+                <span class="cook-time">⏱️ 5 phút lên bàn</span>
+                <button class="btn-add-spotlight" data-add-dish="mc-01">
+                  <span>+ Thêm Vào Mâm</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section" id="menuSection">
+      <div class="section-container">
+        <div class="menu-header-bar">
+          <div>
+            <span class="sub-badge">THỰC ĐƠN ĐA DẠNG & GIÁ BÌNH DÂN</span>
+            <h2 class="section-title">Chọn Món Ngon Đậm Vị Tại Quán 396</h2>
+          </div>
+
+          <!-- Search Menu Input -->
+          <div class="menu-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="menuSearchInput" placeholder="Tìm món (Bò né, bít tết, pate, phô mai, trà đào...)...">
+          </div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="category-tabs-container">
+          <div class="category-pills" id="categoryPills">
+            <button class="cat-pill-btn active" data-cat="all">
+              <span>Tất Cả Món</span>
+              <span class="pill-count" id="countAll">16</span>
+            </button>
+            <button class="cat-pill-btn" data-cat="bo-ne">
+              <span>Bò Né Chảo Gang</span>
+              <span class="pill-count" id="countBoNe">4</span>
+            </button>
+            <button class="cat-pill-btn" data-cat="bit-tet">
+              <span>Bò Bít Tết Sốt</span>
+              <span class="pill-count" id="countBitTet">3</span>
+            </button>
+            <button class="cat-pill-btn" data-cat="mi-cay">
+              <span>Mì Cay & Món Nóng</span>
+              <span class="pill-count" id="countMiCay">2</span>
+            </button>
+            <button class="cat-pill-btn" data-cat="topping">
+              <span>Topping & Ăn Thêm</span>
+              <span class="pill-count" id="countTopping">4</span>
+            </button>
+            <button class="cat-pill-btn" data-cat="drinks">
+              <span>Đồ Uống Giải Nhiệt</span>
+              <span class="pill-count" id="countDrinks">4</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-items-grid" id="menuItemsGrid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <!-- Empty Search State -->
+        <div class="menu-empty-state" id="menuEmptyState" style="display:none;">
+          <div class="empty-icon">🍳</div>
+          <h3>Không tìm thấy món ăn phù hợp</h3>
+          <p>Hãy thử tìm bằng từ khóa khác hoặc xóa bộ lọc để hiển thị toàn bộ thực đơn.</p>
+          <button class="btn-reset-menu" id="btnResetMenuSearch">Xem Toàn Bộ Menu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurant Space & Dining Atmosphere -->
+    <section class="space-section" id="spaceSection">
+      <div class="section-container">
+        <div class="space-card-wrapper">
+          <div class="space-image-col">
+            <img src="quan-an-space.jpg" alt="Không gian Quán Ăn 396 Bò Né Nguyễn Thị Kiểu ấm cúng đông vui" class="space-img">
+            <div class="space-photo-badge">
+              <span>📸 Hình ảnh không gian thực tế tại Quán 396</span>
+            </div>
+          </div>
+
+          <div class="space-info-col">
+            <span class="sub-badge">KHÔNG GIAN THOÁNG ĐÃNG & ẤM CÚNG</span>
+            <h2 class="section-title">Điểm Hẹn Ẩm Thực Lý Tưởng Cho Gia Đình & Bạn Bè</h2>
+            <p class="space-desc">
+              Tọa lạc ngay mặt tiền <strong>396 Nguyễn Thị Kiểu, Quận 12</strong>, quán sở hữu không gian rộng rãi, bàn ghế gỗ sạch sẽ tinh tươm cùng bếp mở ngắm trọn những ngọn lửa xèo xèo đẹp mắt. Nơi đây là điểm hẹn quen thuộc cho bữa sáng giàu năng lượng, bữa trưa quây quần cùng đồng nghiệp hay bữa tối ấm áp bên gia đình.
+            </p>
+
+            <div class="amenities-grid">
+              <div class="amenity-item">
+                <span class="amenity-icon">❄️</span>
+                <div>
+                  <strong>Quạt Gió Thoáng Mát</strong>
+                  <p>Không gian lưu thông gió tự nhiên, không sợ ám khói mùi thức ăn.</p>
+                </div>
+              </div>
+
+              <div class="amenity-item">
+                <span class="amenity-icon">🛵</span>
+                <div>
+                  <strong>Bãi Giữ Xe Rộng & Miễn Phí</strong>
+                  <p>Mặt tiền rộng rãi, có người trông xe an toàn tuyệt đối cho thực khách.</p>
+                </div>
+              </div>
+
+              <div class="amenity-item">
+                <span class="amenity-icon">📶</span>
+                <div>
+                  <strong>Wifi Tốc Độ Cao & Ổ Cắm</strong>
+                  <p>Tiện lợi cho học sinh, sinh viên và dân văn phòng vừa ăn vừa làm việc.</p>
+                </div>
+              </div>
+
+              <div class="amenity-item">
+                <span class="amenity-icon">💳</span>
+                <div>
+                  <strong>Thanh Toán Linh Hoạt</strong>
+                  <p>Chuyển khoản VietQR, Momo, ZaloPay, tiền mặt tiện lợi không cần chờ đợi.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-cta-row">
+              <button class="btn-reserve-space" id="btnOpenReserveFromSpace">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Đặt Bàn Giữ Chỗ Giờ Cao Điểm</span>
+              </button>
+
+              <a href="tel:0908396396" class="btn-call-space">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Gọi 0908 396 396</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Reviews Section (4.8/5 Stars on Google Maps) -->
+    <section class="reviews-section" id="reviewsSection">
+      <div class="section-container">
+        <div class="section-header-center">
+          <span class="sub-badge">TIẾNG LÀNH ĐỒN XA</span>
+          <h2 class="section-title">Thực Khách Nói Gì Về Bò Né 396?</h2>
+          <div class="rating-summary-badge">
+            <span class="stars">★★★★★</span>
+            <span class="score"><strong>4.8 / 5</strong> trên Google Maps & Foody (860+ đánh giá xác thực)</span>
+          </div>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Google Maps Guide Section -->
+    <section class="location-section" id="locationSection">
+      <div class="section-container">
+        <div class="location-card">
+          <div class="location-info-pane">
+            <span class="sub-badge">BẢN ĐỒ & ĐỊA ĐIỂM</span>
+            <h2 class="location-heading">Ghé Thăm Quán Ăn 396 Ngay Hôm Nay</h2>
+            <p class="location-address">
+              📍 <strong>Địa chỉ chính xác:</strong> 396 Nguyễn Thị Kiểu, Phường Hiệp Thành, Quận 12, TP. Hồ Chí Minh
+            </p>
+
+            <div class="location-details-list">
+              <div class="loc-item">
+                <span class="loc-icon">⏰</span>
+                <div>
+                  <strong>Giờ Mở Cửa:</strong>
+                  <p>06:00 – 23:00 (Mở cửa tất cả các ngày trong tuần, kể cả ngày Lễ & Tết)</p>
+                </div>
+              </div>
+
+              <div class="loc-item">
+                <span class="loc-icon">🛵</span>
+                <div>
+                  <strong>Chỉ Dẫn Đường Đi:</strong>
+                  <p>Từ ngã tư Tân Thới Hiệp đi vào đường Nguyễn Thị Kiểu khoảng 800m, quán nằm ngay bên tay phải với bảng hiệu đèn LED đỏ vàng nổi bật.</p>
+                </div>
+              </div>
+
+              <div class="loc-item">
+                <span class="loc-icon">📞</span>
+                <div>
+                  <strong>Điện Thoại / Đặt Hàng Giao Tận Nơi:</strong>
+                  <p><a href="tel:0908396396" class="hotline-big">0908 396 396</a> (Có Zalo hỗ trợ ship nhanh)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-btn-group">
+              <a href="https://maps.app.goo.gl/zEszTX1UxapnSQRu8" target="_blank" rel="noopener noreferrer" class="btn-maps-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Mở Bản Đồ Google Maps</span>
+              </a>
+
+              <button class="btn-copy-address" id="btnCopyAddress">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Sao Chép Địa Chỉ</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Embedded Visual Map Simulator -->
+          <div class="location-map-pane">
+            <div class="interactive-map-frame">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.448574169724!2d106.6366930748192!3d10.870880757766578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291f1f7abf75%3A0x1f4526c8c2cb7355!2sQu%C3%A1n%20%C4%83n%20396-b%C3%B2%20n%C3%A9%20b%C3%B2%20b%C3%ADt%20t%E1%BA%BFt!5e0!3m2!1svi!2s!4v1714500000000!5m2!1svi!2s" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Bản đồ Quán Ăn 396 Bò Né">
+              </iframe>
+              <a href="https://maps.app.goo.gl/zEszTX1UxapnSQRu8" target="_blank" rel="noopener noreferrer" class="map-overlay-badge">
+                <span>📍 Bấm Vào Đây Để Mở Chỉ Đường Bằng GPS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Quick Order Drawer (Mâm Gọi Món) -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" aria-hidden="true">
+    <div class="cart-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+      <div class="cart-drawer-header">
+        <div class="drawer-header-title">
+          <span class="cart-icon-big">🍳</span>
+          <h3 id="cartDrawerTitle">Mâm Gọi Món Của Bạn</h3>
+        </div>
+        <button class="cart-drawer-close" id="btnCloseCartDrawer">&times;</button>
+      </div>
+
+      <div class="cart-drawer-body" id="cartItemsContainer">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>Tổng Tạm Tính:</span>
+          <span class="cart-total-amount" id="cartTotalAmount">0đ</span>
+        </div>
+        <p class="cart-note-text">Bánh mì nóng giòn & dĩa salad luôn được tặng kèm miễn phí!</p>
+        
+        <div class="cart-order-actions">
+          <button class="btn-checkout-zalo" id="btnCheckoutZalo">
+            <span class="zalo-icon-badge">Zalo</span>
+            <span>Gửi Đơn Qua Zalo (0908 396 396)</span>
+          </button>
+          <a href="tel:0908396396" class="btn-checkout-call">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Gọi Trực Tiếp Để Đặt Bàn / Món</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table Reservation Modal -->
+  <div class="modal-overlay" id="reserveModalOverlay" aria-hidden="true">
+    <div class="reserve-modal" role="dialog" aria-modal="true" aria-labelledby="modalReserveTitle">
+      <div class="reserve-modal-header">
+        <div>
+          <span class="sub-badge">GIỮ CHỖ NHANH CHÓNG</span>
+          <h3 id="modalReserveTitle" class="reserve-title">Đặt Bàn Trước Tại Quán Ăn 396</h3>
+        </div>
+        <button class="reserve-modal-close" id="btnCloseReserveModal">&times;</button>
+      </div>
+
+      <form class="reserve-form" id="reserveForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="resName">Họ và Tên (*):</label>
+            <input type="text" id="resName" placeholder="VD: Nguyễn Văn Nam" required>
+          </div>
+
+          <div class="form-group">
+            <label for="resPhone">Số Điện Thoại (*):</label>
+            <input type="tel" id="resPhone" placeholder="VD: 0908 xxx xxx" required>
+          </div>
+
+          <div class="form-group">
+            <label for="resGuests">Số lượng thực khách (*):</label>
+            <select id="resGuests">
+              <option value="1">1 người</option>
+              <option value="2" selected>2 người (Cặp đôi)</option>
+              <option value="4">3 - 4 người (Gia đình)</option>
+              <option value="6">5 - 6 người (Nhóm bạn)</option>
+              <option value="10">Trên 8 người (Hội nhóm)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="resTime">Thời Gian Dự Kiến Đến (*):</label>
+            <input type="datetime-local" id="resTime" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resNote">Ghi chú khẩu vị / Món muốn chuẩn bị trước:</label>
+          <textarea id="resNote" rows="2" placeholder="VD: 2 Bò né đặc biệt trứng lòng đào, 1 bít tết sốt tiêu đen khoai giòn, ít hành..."></textarea>
+        </div>
+
+        <div class="reserve-form-footer">
+          <p class="reserve-policy-note">
+            ℹ️ Quán giữ bàn trong 15 phút so với giờ hẹn. Quý khách cần hỗ trợ gấp xin gọi hotline: <strong>0908 396 396</strong>.
+          </p>
+          <button type="submit" class="btn-submit-reserve">
+            Xác Nhận Đặt Bàn Ngay
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-top-grid">
+        
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <span class="flame-icon">🔥</span>
+            </div>
+            <div class="brand-text-group">
+              <div class="brand-title">QUÁN ĂN 396</div>
+              <div class="brand-subtitle">Bò Né & Bò Bít Tết Chảo Gang</div>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Điểm hẹn ẩm thực quen thuộc của người dân Quận 12 và thực khách sành ăn Sài Gòn. Tươi ngon trong từng thớ thịt bò, đậm đà trong từng giọt nước sốt, giòn rụm trong từng ổ bánh mì!
+          </p>
+          <div class="footer-badges">
+            <span class="f-badge">🥩 Bò Tươi 100%</span>
+            <span class="f-badge">🍳 Chảo Gang Sôi Xèo Xèo</span>
+            <span class="f-badge">🥖 Bánh Mì Nóng Giòn</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Thực Đơn Nổi Bật</h4>
+          <ul>
+            <li><a href="#menuSection">Bò Né Đặc Biệt 396</a></li>
+            <li><a href="#menuSection">Bò Né Phô Mai Kéo Sợi</a></li>
+            <li><a href="#menuSection">Bò Bít Tết Sốt Tiêu Đen</a></li>
+            <li><a href="#menuSection">Mì Cay Hàn Quốc 7 Cấp Độ</a></li>
+            <li><a href="#menuSection">Trà Đào Cam Sả Tươi Mát</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Thông Tin Liên Hệ</h4>
+          <div class="contact-box">
+            <div class="contact-line">
+              <span class="c-icon">📍</span>
+              <span>396 Nguyễn Thị Kiểu, P. Hiệp Thành, Quận 12, TP.HCM</span>
+            </div>
+            <div class="contact-line">
+              <span class="c-icon">⏰</span>
+              <span>06:00 – 23:00 hàng ngày (Cả ngày Lễ & Tết)</span>
+            </div>
+            <div class="contact-line">
+              <span class="c-icon">📞</span>
+              <a href="tel:0908396396" class="phone-link">0908 396 396</a>
+            </div>
+            <div class="contact-line">
+              <span class="c-icon">🗺️</span>
+              <a href="https://maps.app.goo.gl/zEszTX1UxapnSQRu8" target="_blank" rel="noopener noreferrer" class="map-link">Mở trên Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 <strong>Quán Ăn 396 - Bò Né & Bò Bít Tết</strong>. All rights reserved.</p>
+        <p class="footer-credit">Thực đơn và hình ảnh độc quyền tại 396 Nguyễn Thị Kiểu, Hiệp Thành, Quận 12, TP. Hồ Chí Minh.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
