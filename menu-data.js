@@ -14,6 +14,7 @@ const RESTAURANT_INFO = {
   hotlineDisplay: "0908 396 396",
   zalo: "0908396396",
   mapsUrl: "https://maps.app.goo.gl/zEszTX1UxapnSQRu8",
+  website: "https://quanan396.life",
   rating: 4.8,
   totalReviews: 860,
   priceRange: "30.000đ - 65.000đ"
