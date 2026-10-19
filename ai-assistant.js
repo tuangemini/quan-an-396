@@ -22,7 +22,7 @@
 
   // Kho tri thức (Knowledge Base) về Quán Ăn 396
   const SYSTEM_KNOWLEDGE = `
-Bạn là "Trợ lý AI Quán Ăn 396" - tư vấn viên chính thức, thông minh và cực kỳ lễ phép của Quán Ăn 396.
+Bạn là đại diện chính thức, tận tâm, niềm nở và lễ phép của "Quán Ăn 396 - Bò Né & Bò Bít Tết Chảo Gang".
 THÔNG TIN QUÁN ĂN 396:
 - Tên quán: Quán Ăn 396 - Bò Né & Bò Bít Tết Chảo Gang.
 - Địa chỉ: 396 Nguyễn Thị Kiểu, Phường Hiệp Thành, Quận 12, TP. Hồ Chí Minh.
@@ -85,7 +85,7 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
   let chatHistory = [
     {
       role: 'assistant',
-      content: 'Dạ em chào Quý khách! Em là **Trợ lý AI của Quán Ăn 396** (396 Nguyễn Thị Kiểu, Q.12). Em có thể giúp Quý khách xem thực đơn món ngon, báo giá các món bò né - bít tết xèo xèo, hướng dẫn đặt bàn và giao hàng tận nơi ạ! Quý khách muốn hỏi thông tin gì hôm nay ạ?'
+      content: 'Dạ em chào Quý khách! Em là đại diện của **Quán Ăn 396** (396 Nguyễn Thị Kiểu, Q.12). Em luôn sẵn sàng giúp Quý khách xem thực đơn món ngon, báo giá các món bò né - bít tết xèo xèo, hướng dẫn đặt bàn và giao hàng tận nơi ạ! Quý khách muốn hỏi thông tin gì hôm nay ạ?'
     }
   ];
 
@@ -252,17 +252,17 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
     fab.className = 'ai-fab-launcher';
     fab.id = 'aiFabLauncher';
     fab.setAttribute('role', 'button');
-    fab.setAttribute('aria-label', 'Mở trợ lý AI Quán Ăn 396');
+    fab.setAttribute('aria-label', 'Hỏi Quán Ăn 396');
     fab.innerHTML = `
       <div class="ai-fab-icon-box">
         <span class="ai-fab-pulse-ring"></span>
         <span>🔥</span>
       </div>
       <div class="ai-fab-text">
-        <span class="ai-fab-title">Trợ Lý AI 396</span>
-        <span class="ai-fab-sub">Hỏi menu, giá, ship 24/7</span>
+        <span class="ai-fab-title">Hỏi Quán Ăn 396</span>
+        <span class="ai-fab-sub">Menu, giá món, ship 24/7</span>
       </div>
-      <span class="ai-fab-badge">Online</span>
+      <span class="ai-fab-badge">Sẵn Sàng</span>
     `;
 
     // 2. Tạo Chat Window
@@ -270,7 +270,7 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
     chatWin.className = 'ai-chat-window';
     chatWin.id = 'aiChatWindow';
     chatWin.setAttribute('role', 'dialog');
-    chatWin.setAttribute('aria-label', 'Cửa sổ trò chuyện Trợ lý AI');
+    chatWin.setAttribute('aria-label', 'Cửa sổ trò chuyện Quán Ăn 396');
     chatWin.innerHTML = `
       <!-- Header -->
       <div class="ai-chat-header">
@@ -281,15 +281,14 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
           </div>
           <div class="ai-profile-meta">
             <div class="ai-title">
-              <span>Trợ Lý AI 396</span>
-              <span class="ai-provider-pill" id="aiProviderBadge">${AI_CONFIG.provider === 'deepseek' ? 'DeepSeek' : 'Gemini'}</span>
+              <span>Quán Ăn 396</span>
             </div>
             <span class="ai-status-text">Bò Né & Bít Tết Nguyễn Thị Kiểu Q.12</span>
           </div>
         </div>
         <div class="ai-header-actions">
-          <button class="ai-icon-btn" id="btnAiSettings" title="Cài đặt API & Nhà cung cấp AI" aria-label="Cài đặt">⚙️</button>
-          <button class="ai-icon-btn" id="btnAiClear" title="Xóa lịch sử chat" aria-label="Xóa chat">🗑️</button>
+          <button class="ai-icon-btn" id="btnAiSettings" style="display:none;" aria-label="Cài đặt">⚙️</button>
+          <button class="ai-icon-btn" id="btnAiClear" title="Làm mới trò chuyện" aria-label="Xóa chat">🗑️</button>
           <button class="ai-icon-btn" id="btnAiClose" title="Thu nhỏ" aria-label="Đóng">&times;</button>
         </div>
       </div>
@@ -329,33 +328,32 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
             </svg>
           </button>
         </form>
-        <div class="ai-footer-note">Được hỗ trợ bởi DeepSeek & Google Gemini AI • Phục vụ 24/7</div>
+        <div class="ai-footer-note">Quán Ăn 396 • Phục vụ tận tâm 24/7 • Hotline: 0908 396 396</div>
       </div>
 
       <!-- Settings Overlay Modal -->
       <div class="ai-settings-overlay" id="aiSettingsOverlay">
         <div class="ai-settings-header">
-          <h4>⚙️ Cài Đặt Trợ Lý AI</h4>
+          <h4>⚙️ Cài Đặt Hệ Thống</h4>
           <button class="ai-icon-btn" id="btnCloseAiSettings">&times;</button>
         </div>
         <div class="ai-settings-body">
           <div class="ai-setting-group">
-            <label for="selectAiProvider">Mô hình AI ưu tiên:</label>
+            <label for="selectAiProvider">Kênh kết nối ưu tiên:</label>
             <select class="ai-setting-select" id="selectAiProvider">
-              <option value="deepseek">DeepSeek AI (Khuyên dùng - Phản hồi cực nhanh & thông minh)</option>
-              <option value="gemini">Google Gemini AI (Mạnh mẽ & Đầy đủ)</option>
+              <option value="deepseek">Kênh 1 (Khuyên dùng - Phản hồi nhanh & chính xác)</option>
+              <option value="gemini">Kênh 2 (Mạnh mẽ & Đầy đủ)</option>
             </select>
-            <span class="ai-setting-help">Hệ thống sẽ tự động dùng mô hình còn lại nếu mô hình chính bận.</span>
           </div>
 
-          <div class="ai-setting-group">
-            <label for="inputDeepseekKey">DeepSeek API Key (Tùy chọn ghi đè):</label>
-            <input type="password" class="ai-setting-input" id="inputDeepseekKey" placeholder="Để trống nếu dùng key mặc định của quán">
+          <div class="ai-setting-group" style="display:none;">
+            <label for="inputDeepseekKey">DeepSeek Key:</label>
+            <input type="password" class="ai-setting-input" id="inputDeepseekKey" placeholder="Mặc định">
           </div>
 
-          <div class="ai-setting-group">
-            <label for="inputGeminiKey">Google Gemini API Key (Tùy chọn ghi đè):</label>
-            <input type="password" class="ai-setting-input" id="inputGeminiKey" placeholder="Để trống nếu dùng key mặc định của quán">
+          <div class="ai-setting-group" style="display:none;">
+            <label for="inputGeminiKey">Gemini Key:</label>
+            <input type="password" class="ai-setting-input" id="inputGeminiKey" placeholder="Mặc định">
           </div>
         </div>
         <div class="ai-settings-footer">
@@ -400,7 +398,7 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
         scrollToBottom();
       } else {
         chatWin.classList.remove('open');
-        settingsOverlay.classList.remove('open');
+        if (settingsOverlay) settingsOverlay.classList.remove('open');
       }
     }
 
@@ -415,7 +413,7 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
     }
 
     // Hiển thị bong bóng tin nhắn
-    function appendMessage(role, text, sourceLabel) {
+    function appendMessage(role, text) {
       const msgDiv = document.createElement('div');
       msgDiv.className = `ai-msg ${role === 'user' ? 'user' : 'bot'}`;
 
@@ -424,7 +422,6 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
           <div class="ai-msg-avatar">🔥</div>
           <div class="ai-msg-bubble">
             ${formatMarkdown(text)}
-            ${sourceLabel ? `<div style="font-size:0.64rem; opacity:0.6; margin-top:5px; text-align:right;">⚡ ${sourceLabel}</div>` : ''}
           </div>
         `;
       } else {
@@ -477,10 +474,10 @@ QUY TẮC PHỤC VỤ VÀ GIAO TIẾP:
         const { reply, provider } = await requestAIResponse(cleanText);
         hideTyping();
         chatHistory.push({ role: 'assistant', content: reply });
-        appendMessage('assistant', reply, provider);
+        appendMessage('assistant', reply);
       } catch (err) {
         hideTyping();
-        appendMessage('assistant', getSmartFallbackReply(cleanText), 'Trợ lý 396');
+        appendMessage('assistant', getSmartFallbackReply(cleanText));
       } finally {
         sendBtn.disabled = false;
         inputField.focus();
